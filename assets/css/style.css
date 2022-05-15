@@ -1,23 +1,18 @@
-/* Overall Styles */
-
-
-/* Better Practice using this pseudo? */
-*, *::before, *::after {
-    box-sizing: inherit;
+/* OVERALL STYLES */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-* {
-    font-size: 100%;
-    line-height: 1.5rem;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    height: 100%;
+/* Better Practice using this pseudo? */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 body {
-margin: 0 auto;
-padding: 0;
-min-height: 100%;
-max-width: 100%;
-
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  color: gray;
 }
