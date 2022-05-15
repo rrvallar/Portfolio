@@ -66,6 +66,36 @@ main img {
   height: auto;
 }
 
+/* change align to baseline? */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 70px 6px;
+}
+.header h1 {
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 0;
+}
+/* HEADER STYLE END */
+
+.top-nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.top-nav ul li {
+  margin-left: 4.9em;
+}
+
+.top-nav ul li a {
+  font-weight: 300;
+  text-decoration: none;
+}
+
 /* MEDIA QUERY */
 
 @media screen and (max-width: 670px) {
@@ -74,3 +104,4 @@ main img {
     flex-basis: 100%;
   }
 }
+/* QUERY END */
