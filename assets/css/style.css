@@ -17,7 +17,7 @@ body {
   color: gray;
 }
 
-.warp {
+.wrap {
   display: flex;
   flex-flow: column;
   min-height: 100vh;
@@ -25,3 +25,27 @@ body {
   margin: 0 auto;
   padding: 0;
 }
+
+/* FOOTER STYLES (margin-top:auto to keep footer at bottom */
+.footer {
+  margin-top: auto;
+  /* display: flex;
+  justify-content: space-between; */
+}
+.footer ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding-left: 0;
+  justify-content: space-between;
+}
+.footer ul li:hover {
+  background-color: lightgray;
+}
+
+.contact {
+  font-size: 30px;
+  margin: 0 0.23em;
+}
+
+/* FOOTER STYLES END */
