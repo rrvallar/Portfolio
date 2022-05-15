@@ -49,3 +49,28 @@ body {
 }
 
 /* FOOTER STYLES END */
+
+main {
+  display: flex;
+}
+
+.home {
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+main img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 670px) {
+  .home {
+    flex-flow: column;
+    flex-basis: 100%;
+  }
+}
