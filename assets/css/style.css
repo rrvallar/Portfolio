@@ -1,3 +1,23 @@
-p {
-    color: blue;
+/* Overall Styles */
+
+
+/* Better Practice using this pseudo? */
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+* {
+    font-size: 100%;
+    line-height: 1.5rem;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+}
+
+body {
+margin: 0 auto;
+padding: 0;
+min-height: 100%;
+max-width: 100%;
+
 }
