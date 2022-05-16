@@ -5,7 +5,6 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
-/* Better Practice using this pseudo? */
 *,
 *::before,
 *::after {
@@ -16,7 +15,7 @@ body {
   font-family: "Segoe UI", Arial, Helvetica, sans-serif;
   color: gray;
 }
-
+/* OVERALL END */
 .wrap {
   display: flex;
   flex-flow: column;
@@ -26,7 +25,7 @@ body {
   padding: 0;
 }
 
-/* FOOTER STYLES (margin-top:auto to keep footer at bottom */
+/* FOOTER STYLES */
 .footer {
   margin-top: auto;
   /* display: flex;
@@ -44,6 +43,7 @@ body {
   text-decoration: underline;
   text-decoration-thickness: 0.1em;
   font-size: 20px;
+  cursor: pointer;
 }
 
 .footer ul li:hover {
@@ -57,23 +57,42 @@ body {
 
 /* FOOTER STYLES END */
 
-main {
+main,
+.run-buddy-box {
   display: flex;
 }
+/* HOME STYLES */
 
-.home {
+.home,
+.run-buddy-box {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
 }
 
-.home-box {
+.home-box,
+.run-buddy-image {
   flex-basis: 50%;
   justify-content: space-around;
   align-items: center;
   padding: 0 7px 14px;
   position: relative;
 }
+.home-box p,
+.run-buddy-image p {
+  font-size: 50px;
+  background-color: whitesmoke;
+  cursor: pointer;
+}
+.home-box p:hover {
+  color: lightgrey;
+}
+.run-buddy-image p:hover {
+  color: lightgrey;
+}
+
+/* HOME STYLES END  */
+
 /* TOP LEFT TEXT FOR IMAGES */
 
 .top-left {
@@ -81,12 +100,27 @@ main {
   top: 8px;
   left: 16px;
 }
-/* END TOP LEFT */
-main img {
+/* TOP LEFT END */
+
+main img,
+.run-buddy-image img {
   display: block;
   width: 100%;
   height: auto;
 }
+.run-buddy-image img {
+}
+
+/* .run-buddy-image {
+  display: flex;
+  width: 75vw;
+  height: 75vh;
+  object-fit: cover;
+}
+
+.run-buddy-box {
+  display: flex;
+} */
 
 @media screen and (max-width: 670px) {
   .home-box {
