@@ -39,8 +39,15 @@ body {
   padding-left: 0;
   justify-content: space-between;
 }
+.footer ul li {
+  display: flex;
+  text-decoration: underline;
+  text-decoration-thickness: 0.1em;
+  font-size: 20px;
+}
+
 .footer ul li:hover {
-  background-color: lightgray;
+  color: lightgray;
 }
 
 .contact {
@@ -65,8 +72,16 @@ main {
   justify-content: space-around;
   align-items: center;
   padding: 0 7px 14px;
+  position: relative;
 }
+/* TOP LEFT TEXT FOR IMAGES */
 
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+/* END TOP LEFT */
 main img {
   display: block;
   width: 100%;
