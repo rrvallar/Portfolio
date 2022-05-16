@@ -64,12 +64,20 @@ main {
   flex-basis: 50%;
   justify-content: space-around;
   align-items: center;
+  padding: 0 7px 14px;
 }
 
 main img {
   display: block;
   width: 100%;
   height: auto;
+}
+
+@media screen and (max-width: 670px) {
+  .home-box {
+    flex-flow: column;
+    flex-basis: 100%;
+  }
 }
 
 /* .home-box {
