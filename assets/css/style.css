@@ -61,6 +61,15 @@ main,
 .run-buddy-box {
   display: flex;
 }
+
+.run-buddy-box {
+  max-height: 1000px;
+}
+.run-buddy-image img {
+  height: 50vh;
+  width: 60vw;
+  display: block;
+}
 /* HOME STYLES */
 
 .home,
@@ -84,6 +93,14 @@ main,
   background-color: whitesmoke;
   cursor: pointer;
 }
+a {
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  color: gray;
+  text-decoration: none;
+}
+a:hover {
+  color: lightgrey;
+}
 .home-box p:hover {
   color: lightgrey;
 }
@@ -102,13 +119,10 @@ main,
 }
 /* TOP LEFT END */
 
-main img,
-.run-buddy-image img {
+main img {
   display: block;
   width: 100%;
   height: auto;
-}
-.run-buddy-image img {
 }
 
 /* .run-buddy-image {
@@ -123,7 +137,8 @@ main img,
 } */
 
 @media screen and (max-width: 670px) {
-  .home-box {
+  .home-box,
+  .run-buddy-box {
     flex-flow: column;
     flex-basis: 100%;
   }
@@ -156,6 +171,7 @@ main img {
   font-weight: 300;
   text-transform: uppercase;
   margin: 0;
+  font-size: 45px;
 }
 /* HEADER STYLE END */
 
@@ -173,6 +189,7 @@ main img {
 .top-nav ul li a {
   font-weight: 300;
   text-decoration: none;
+  font-size: large;
 }
 
 .top-nav a:hover {
@@ -183,6 +200,12 @@ main img {
 
 @media screen and (max-width: 670px) {
   .home {
+    flex-flow: column;
+    flex-basis: 100%;
+  }
+}
+@media screen and (max-width: 770px) {
+  .run-buddy-box {
     flex-flow: column;
     flex-basis: 100%;
   }
