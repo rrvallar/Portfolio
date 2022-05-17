@@ -66,7 +66,7 @@ main,
   max-height: 1000px;
 }
 .run-buddy-image img {
-  max-height: 500px;
+  max-height: 409px;
   display: block;
 }
 .work-image img {
@@ -156,13 +156,13 @@ main img {
   display: flex;
 } */
 
-@media screen and (max-width: 670px) {
+/* @media screen and (max-width: 670px) {
   .home-box,
   .run-buddy-box {
     flex-flow: column;
     flex-basis: 100%;
   }
-}
+} */
 
 /* .home-box {
   display: flex;
@@ -224,12 +224,12 @@ main img {
     flex-basis: 100%;
   }
 }
-@media screen and (max-width: 770px) {
+/* @media screen and (max-width: 770px) {
   .run-buddy-box {
     flex-flow: column;
     flex-basis: 100%;
   }
-}
+} */
 
 /* BIO STYLE */
 .bio {
